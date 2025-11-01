@@ -1,0 +1,18 @@
+#create project folder
+# create project folder
+mkdir hackwave_disease && cd hackwave_disease
+
+# create python venv
+python -m venv env
+# mac/linux
+source env/bin/activate
+# windows
+# env\Scripts\activate
+
+# init git
+git init
+echo "env/" > .gitignore
+mkdir data notebooks models app
+touch README.md requirements.txt
+git add .
+git commit -m "init: project skeleton"
